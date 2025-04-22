@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Rincian Acara</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background: url("https://images.pexels.com/photos/1024965/pexels-photo-1024965.jpeg") no-repeat center center fixed;
+        background-size: cover;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      .accordion-item {
+        margin-bottom: 1rem;
+      }
+      .accordion-header {
+        font-weight: 700;
+      }
+
+      textarea {
+        width: 75%;
+      }
+
+      .accordion-button span {
+        background-color: skyblue;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Form Rincian Acara</h2>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWanita"><span>1. </span> Calon Mempelai Wanita</button>
+          </h2>
+          <div id="collapseWanita" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Nama Panggilan" id="namaPanggilanWanita" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Lengkap" id="namaLengkapWanita" />
+              <input type="number" class="form-control mb-2" placeholder="Putri ke" id="putriKe" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Ayah" id="ayahWanita" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Ibu" id="ibuWanita" />
+              <input type="text" class="form-control mb-2" placeholder="Instagram" id="instagramWanita" />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePria"><span>2.</span> Calon Mempelai Pria</button>
+          </h2>
+          <div id="collapsePria" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Nama Panggilan" id="namaPanggilanPria" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Lengkap" id="namaLengkapPria" />
+              <input type="number" class="form-control mb-2" placeholder="Putra ke" id="putraKe" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Ayah" id="ayahPria" />
+              <input type="text" class="form-control mb-2" placeholder="Nama Ibu" id="ibuPria" />
+              <input type="text" class="form-control mb-2" placeholder="Instagram" id="instagramPria" />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#akad"><span>3.</span> Acara Akad</button>
+          </h2>
+          <div id="akad" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Hari" id="hariAkad" />
+              <input type="text" class="form-control mb-2" placeholder="Tanggal" id="tglAkad" />
+              <input type="number" class="form-control mb-2" placeholder="Jam" id="jamAkad" />
+              <input type="text" class="form-control mb-2" placeholder="Tempat Acara" id="tempatAkad" />
+              <input type="text" class="form-control mb-2" placeholder="Link Maps " id="mapsAkad" />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Resepsi"><span>4.</span> Acara Resepsi</button>
+          </h2>
+          <div id="Resepsi" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Hari" id="hariResepsi" />
+              <input type="text" class="form-control mb-2" placeholder="Tanggal" id="tglResepsi" />
+              <input type="number" class="form-control mb-2" placeholder="Jam" id="jamResepsi" />
+              <input type="text" class="form-control mb-2" placeholder="Tempat Acara" id="tempatResepsi" />
+              <input type="text" class="form-control mb-2" placeholder="Link Maps " id="mapsResepsi" />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#music"><span>5.</span> Lagu Atau Music</button>
+          </h2>
+          <div id="music" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Link Youtobe" id="linkMusic" />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#music"><span>6.</span> Love Story</button>
+          </h2>
+          <div id="music" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <textarea class="form-control mb-2" placeholder="Ceritakan Kisah Cinta Anda" id="loveStory"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRekening"><span>7.</span> Angpou Digital & Kirim Hadiah</button>
+          </h2>
+          <div id="collapseRekening" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Nama Bank" id="namaBank" />
+              <input type="text" class="form-control mb-2" placeholder="Atas Nama" id="atasNama" />
+              <input type="number" class="form-control mb-2" placeholder="Nomor Rekening" id="nomorRekening" />
+            </div>
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Nama Bank" id="namaBank2" />
+              <input type="text" class="form-control mb-2" placeholder="Atas Nama" id="atasNama2" />
+              <input type="number" class="form-control mb-2" placeholder="Nomor Rekening" id="nomorRekening2" />
+            </div>
+            <div class="accordion-body">
+              <input type="text" class="form-control mb-2" placeholder="Nama Penerima" id="namaPenerima" />
+              <input type="number" class="form-control mb-2" placeholder="Nomor Hp" id="noHp" />
+              <input type="text" class="form-control mb-2" placeholder="Alamat Kirim Hadiah" id="alamatHadiah" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><b>NB:</b> Jika ada tambahan data atau yang lainnya, silahkan hubungi admin</p>
+      <div class="d-grid gap-2 mt-3">
+        <button class="btn btn-primary" onclick="sendToWhatsApp()">Kirim ke WhatsApp</button>
+      </div>
+    </div>
+
+    <script>
+      function sendToWhatsApp() {
+        let message =
+          `*1. Calon Mempelai Wanita*\nNama Panggilan: ${document.getElementById("namaPanggilanWanita").value}\nNama Lengkap: ${document.getElementById("namaLengkapWanita").value}\nPutri ke: ${
+            document.getElementById("putriKe").value
+          }\nDari Bapak: ${document.getElementById("ayahWanita").value}\nIbu: ${document.getElementById("ibuWanita").value}\nInstagram: ${document.getElementById("instagramWanita").value}\n\n` +
+          `*2. Calon Mempelai Pria*\nNama Panggilan: ${document.getElementById("namaPanggilanPria").value}\nNama Lengkap: ${document.getElementById("namaLengkapPria").value}\nPutra ke: ${
+            document.getElementById("putraKe").value
+          }\nDari Bapak: ${document.getElementById("ayahPria").value}\nIbu: ${document.getElementById("ibuPria").value}\nInstagram: ${document.getElementById("instagramPria").value}\n\n` +
+          `*3. Acara* : Akad\nHari: ${document.getElementById("hariAkad").value}\nTanggal: ${document.getElementById("tglAkad").value}\nPukul ${document.getElementById("jamAkad").value}\nTempat: ${
+            document.getElementById("tempatAkad").value
+          }\n\nLink Maps: ${document.getElementById("mapsAkad").value}\n\n` +
+          `*4. Acara* : Resepsi\nHari: ${document.getElementById("hariResepsi").value}\nTanggal: ${document.getElementById("tglResepsi").value}\nPukul ${document.getElementById("jamResepsi").value}\nTempat: ${
+            document.getElementById("tempatResepsi").value
+          }\n\nLink Maps: ${document.getElementById("mapsResepsi").value}\n\n` +
+          `*5. Lagu Atau Music* : Resepsi\nLink Youtobe: ${document.getElementById("linkMusic").value}\n\n` +
+          `*6. Love Story* : Resepsi\nLink Youtobe: ${document.getElementById("loveStory").value}\n\n` +
+          `*7. Fitur Angpou*\nNama Bank: ${document.getElementById("namaBank").value}\nAtas Nama: ${document.getElementById("atasNama").value}\nNomor Rekening: ${document.getElementById("nomorRekening").value}\n\nNama Bank: ${
+            document.getElementById("namaBank2").value
+          }\nAtas Nama: ${document.getElementById("atasNama2").value}\nNomor Rekening: ${document.getElementById("nomorRekening2").value}\n\nNama Penerima: ${document.getElementById("namaPenerima").value}\nNomor Hp: ${
+            document.getElementById("noHp").value
+          }\nAlamat Kirim Hadiah: ${document.getElementById("alamatHadiah").value}\n\n`;
+
+        let url = `https://wa.me/?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+      }
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
